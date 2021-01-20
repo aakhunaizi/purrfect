@@ -7,9 +7,21 @@
 }
 
 .cafe-image {
-  margin: auto;
   display: block;
-  height: auto;
-  max-width: 80%;
-  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100;
+}
+
+.productList {
+  display: inline-block;
+  padding-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
 }
