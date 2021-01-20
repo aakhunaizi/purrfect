@@ -4,10 +4,10 @@ function App() {
   return (
     <div className="home-page">
       <div className="shop-title">
-        <h1>Purrfect</h1>
+        <h1>Purrfect 🐾</h1>
       </div>
       <div className="shop-subtitle">
-        <h2>Stay PAWsitive!</h2>
+        <h2>Stay PAWsitive! </h2>
       </div>
       <div className="cafe-image">
         <img src={catCafeImage} />
