@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import catCafeImage from "./images/catcafe.jpeg";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home-page">
+      <div className="shop-title">
+        <h1>Purrfect</h1>
+      </div>
+      <div className="shop-subtitle">
+        <h2>Stay PAWsitive!</h2>
+      </div>
+      <div className="cafe-image">
+        <img src={catCafeImage} />
+      </div>
     </div>
   );
 }
