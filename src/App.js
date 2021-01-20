@@ -4,7 +4,7 @@ import products from "./products";
 
 const productList = products.map((product) => {
   return (
-    <div class="productList">
+    <div className="product-list">
       <img src={product.image} alt={product.name} />
       <p>{product.name}</p>
       <p>{product.price}</p>
@@ -28,7 +28,7 @@ function App() {
           alt="The interior of purrfect"
         />
       </div>
-      <div>{productList}</div>
+      {productList}
     </div>
   );
 }
