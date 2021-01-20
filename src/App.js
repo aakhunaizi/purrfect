@@ -9,8 +9,8 @@ function App() {
       <div className="shop-subtitle">
         <h2>Stay PAWsitive! </h2>
       </div>
-      <div className="cafe-image">
-        <img src={catCafeImage} />
+      <div>
+        <img className="cafe-image" src={catCafeImage} />
       </div>
     </div>
   );

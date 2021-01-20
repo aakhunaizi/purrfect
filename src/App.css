@@ -7,5 +7,9 @@
 }
 
 .cafe-image {
-  text-align: center;
+  margin: auto;
+  display: block;
+  height: auto;
+  max-width: 80%;
+  height: auto;
 }
