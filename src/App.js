@@ -1,35 +1,22 @@
-import "./App.css";
-import catCafeImage from "./images/catcafe.jpeg";
-import products from "./products";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./styles";
+import Home from "./components/Home";
+import ProductList from "./components/ProductList";
 
-const productList = products.map((product) => {
-  return (
-    <div className="product-list">
-      <img src={product.image} alt={product.name} />
-      <p>{product.name}</p>
-      <p>{product.price}</p>
-    </div>
-  );
-});
+const theme = {
+  mainColor: "#E8C547",
+  secondaryColor: "#53687E",
+  thirdColor: "#DA4167",
+  backgroundColor: "#30323D",
+};
 
 function App() {
   return (
-    <div className="home-page">
-      <div className="shop-title">
-        <h1>Purrfect 🐾</h1>
-      </div>
-      <div className="shop-subtitle">
-        <h2>Stay PAWsitive! </h2>
-      </div>
-      <div>
-        <img
-          className="cafe-image"
-          src={catCafeImage}
-          alt="The interior of purrfect"
-        />
-      </div>
-      {productList}
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Home />
+      <ProductList class="product-list" />
+    </ThemeProvider>
   );
 }
 

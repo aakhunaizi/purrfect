@@ -1,11 +1,12 @@
+import { ProductWrapper } from "../styles";
 const Product = (props) => {
   const product = props.product;
   return (
-    <div>
+    <ProductWrapper>
       <img src={product.image} alt={product.name} />
       <p>{product.name}</p>
-      <p>{product.price}</p>
-    </div>
+      <p class="product-price">{product.price}</p>
+    </ProductWrapper>
   );
 };
 
